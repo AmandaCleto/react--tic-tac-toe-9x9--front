@@ -1,14 +1,28 @@
-import styled, { css } from 'styled-components';
+import styled from "styled-components";
 
-import img from '../../../assets/background-card.png';
+import img from "../../../assets/background-card.png";
 
 export const CardComponent = styled.div`
-  background: #72A696;
-  border-radius: 3px;
-  height: 60px;
-  width: 200px;
-  border-radius: 10px;
-  margin: 0 1em;
-  padding: 0.25em 1em;
-  background-image: url(${img});
-`
+    background: ${({theme}) => theme.green};
+    background-image: url(${img});
+    background-size: cover;
+    padding: 40px 20px;
+    height: 40px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    p {
+        padding-left: 15px;
+        font-size: ${({theme}) => theme.font.lg};
+        color: ${({theme}) => theme.white};
+        font-weight: bold;
+        width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+`;

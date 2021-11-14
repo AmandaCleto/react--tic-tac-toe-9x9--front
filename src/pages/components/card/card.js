@@ -1,10 +1,26 @@
-import React from 'react';
-import { CardComponent } from './card-style';
+import React from "react";
+import { useContext } from "react";
+import Avatar from "boring-avatars";
+import { CardComponent } from "./card-style";
+import { ThemeContext } from "styled-components";
 
-export default function Card({children}) {
+export default function Card({ name }) {
+    const themeContext = useContext(ThemeContext);
+
     return (
         <CardComponent>
-            <p>{children}</p>
+            <Avatar
+                size={45}
+                name={name}
+                variant="beam"
+                colors={[
+                    themeContext.blue,
+                    themeContext.yellow,
+                    themeContext.red,
+                    themeContext.white,
+                ]}
+            />
+            <p>{name}</p>
         </CardComponent>
-    )
+    );
 }
