@@ -3,6 +3,7 @@ import { useContext } from "react";
 import Avatar from "boring-avatars";
 import { CardComponent } from "./card-style";
 import { ThemeContext } from "styled-components";
+import img from "../../assets/background-card.png";
 
 export default function Card({ name }) {
     const themeContext = useContext(ThemeContext);

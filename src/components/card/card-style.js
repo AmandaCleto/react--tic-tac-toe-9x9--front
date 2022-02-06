@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-import img from "../../../assets/background-card.png";
+import img from "../../assets/background-card.png";
 
 export const CardComponent = styled.div`
     background: ${({theme}) => theme.green};
-    background-image: url(${img});
     background-size: cover;
+    background-image: url(${img});
     padding: 40px 20px;
     height: 40px;
     width: 100%;

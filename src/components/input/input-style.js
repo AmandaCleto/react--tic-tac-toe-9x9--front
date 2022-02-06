@@ -14,7 +14,7 @@ export const LabelComponent = styled.label`
 
 export const InputComponent = styled.input`
     &::placeholder {
-        color: #ddd;
+        color: #bdbdbd;
     }
     color: #2e2e2e;
     width: calc(100% - 5px);
