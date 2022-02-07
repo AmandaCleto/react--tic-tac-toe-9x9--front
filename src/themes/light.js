@@ -14,8 +14,15 @@ export default {
 
     font: {
         xl: "26px",
+        lg: "22px",
+        md: "18px",
+        sm: "14px",
+    },
+
+    fontMobile: {
+        xl: "24px",
         lg: "20px",
         md: "16px",
-        sm: "14px",
+        sm: "12px",
     }
 }

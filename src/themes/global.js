@@ -8,6 +8,17 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
+
+        h1, h2, h3, h4, p {
+         color: ${({ theme }) => theme.green};
+        }
+    }
+
+    .modal-inside-space {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .app {
@@ -19,6 +30,28 @@ export default createGlobalStyle`
         border-top-color: ${({ theme }) => theme.red};
         border-left-color: ${({ theme }) => theme.red};
         border-style: solid;
+
+        h1 {
+            font-size: 28px;
+
+            @media(max-width: 600px) {
+             font-size: 24px;
+            }
+        }
+
+        h2 {
+            font-size: ${({ theme }) => theme.font.lg};
+            @media(max-width: 600px) {
+                font-size: ${({ theme }) => theme.fontMobile.lg};
+            }
+        }
+
+        h3 {
+            font-size: ${({ theme }) => theme.font.md};
+            @media(max-width: 600px) {
+                font-size: ${({ theme }) => theme.fontMobile.lg};
+            }
+        }
 
         @media (max-width: 600px) {
             border: none;
