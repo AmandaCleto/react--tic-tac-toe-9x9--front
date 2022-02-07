@@ -5,11 +5,11 @@ import { CardComponent } from "./card-style";
 import { ThemeContext } from "styled-components";
 import img from "../../assets/background-card.png";
 
-export default function Card({ name }) {
+export default function Card({ name, style }) {
     const themeContext = useContext(ThemeContext);
 
     return (
-        <CardComponent>
+        <CardComponent style={style}>
             <Avatar
                 size={45}
                 name={name}

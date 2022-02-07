@@ -4,7 +4,7 @@ import { LabelComponent, InputComponent } from './input-style';
 export default function Input ({ label = '', placeholder = ''}) {
     return (
         <LabelComponent>
-            <span>{label}</span>
+            <h3>{label}</h3>
             <InputComponent type="text" placeholder={placeholder} />
         </LabelComponent>
     )

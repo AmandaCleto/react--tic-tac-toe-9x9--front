@@ -30,7 +30,7 @@ export default function Select() {
             </SelectComponent>
             <SelectComponent className={state.O ? 'selected':''} onClick={() => handleClick('O')}>
                 <svg height="36" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M49.5 28.5C49.5 40.098 40.098 49.5 28.5 49.5C16.902 49.5 7.50002 40.098 7.50002 28.5C7.50002 16.902 16.902 7.5 28.5 7.5C40.098 7.5 49.5 16.902 49.5 28.5Z" stroke="#3BB4DA" stroke-width="15"/>
+                    <path d="M49.5 28.5C49.5 40.098 40.098 49.5 28.5 49.5C16.902 49.5 7.50002 40.098 7.50002 28.5C7.50002 16.902 16.902 7.5 28.5 7.5C40.098 7.5 49.5 16.902 49.5 28.5Z" stroke="#3BB4DA" strokeWidth="15"/>
                 </svg>
             </SelectComponent>
         </ContainerComponent>

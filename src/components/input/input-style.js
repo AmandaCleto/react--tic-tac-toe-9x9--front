@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 
 export const LabelComponent = styled.label`
+
+
+
     display: flex;
     flex-direction: column;
     width: 100%;
-    span {
+    h3 {
         margin-bottom: 8px;
-        color: ${({theme}) => theme.green};
         font-weight: bold;
-        font-size: ${({theme}) => theme.font.lg};
     }
 `;
 
 export const InputComponent = styled.input`
     &::placeholder {
-        color: #bdbdbd;
+        color: ${({theme}) => theme.grey};
     }
     color: #2e2e2e;
     width: calc(100% - 5px);

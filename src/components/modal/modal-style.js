@@ -14,6 +14,7 @@ export const MaskComponent = styled.div`
     filter: blur(2px);
     -webkit-filter: blur(2px);
     backdrop-filter: blur(2px);
+
 `;
 export const ModalComponent = styled.div`
     z-index: 2;
@@ -35,6 +36,7 @@ export const ModalComponent = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-image: url("${o}"), url("${x}");
 
     @media only screen and (max-width: 768px) {
         border: none;

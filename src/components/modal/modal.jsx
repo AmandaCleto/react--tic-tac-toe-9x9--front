@@ -6,7 +6,7 @@ export default function Modal({ children, winnerColor }) {
         <>
             <MaskComponent winnerColor={winnerColor} />
             <ModalComponent>
-                <div className="padding">{children}</div>
+                <div className="modal-inside-space">{children}</div>
             </ModalComponent>
         </>
     );
